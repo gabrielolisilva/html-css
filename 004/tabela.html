@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 340px;
+            border-collapse: collapse;
+        }
+
+        table > caption{
+            font-size: 1.1em;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        table td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        table > thead, tfoot{
+            background-color: lightgray;
+            font-size: 1.1em;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Esse é o exemplo de uma tabela</h1>
+    <table>
+        <caption>
+            População por Estado
+        </caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 463 349</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total da População</th>
+                <td class="num">90.445.332</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
